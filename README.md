@@ -142,13 +142,3 @@ This project is for educational purposes. Feel free to use and modify it.
 **Bubai Sou**  
 [GitHub](https://github.com/Bubai2026)  
 [LinkedIn](https://linkedin.com/in/bubaisou)
-
----
-
-- UCI Machine Learning Repository for the original dataset.
-- Streamlit for the amazing app framework.
-
----
-
-### ⭐ If you found this project useful, please give it a star!
-#
