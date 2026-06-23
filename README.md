@@ -1,10 +1,9 @@
-'''
 # Shopper Spectrum
 ## Customer Segmentation and Product Recommendations in E-Commerce
 
 ---
 
-## 📖 Project Overview
+## Project Overview
 
 Shopper Spectrum is an end-to-end data science project that analyzes e-commerce transaction data to:
 
@@ -16,7 +15,7 @@ This project demonstrates practical applications in targeted marketing, personal
 
 ---
 
-## 🎯 Problem Statement
+## Problem Statement
 
 The global e-commerce industry generates vast amounts of transaction data daily. Analyzing this data is essential for identifying meaningful customer segments and recommending relevant products to enhance customer experience and drive business growth. This project aims to:
 
@@ -26,7 +25,7 @@ The global e-commerce industry generates vast amounts of transaction data daily.
 
 ---
 
-## 📁 Dataset
+## Dataset
 
 - **Source:** [Online Retail Dataset](https://drive.google.com/file/d/1rzRwxm_CJxcRzfoo9Ix37A2JTlMummY-/view?usp=sharing)
 - **Description:** Transactional data from a UK-based online retailer (2022–2023).
@@ -34,7 +33,7 @@ The global e-commerce industry generates vast amounts of transaction data daily.
 
 ---
 
-## 🔧 Methodology
+## Methodology
 
 ### 1. Data Preprocessing
 - Removed rows with missing `CustomerID`.
@@ -73,51 +72,15 @@ The global e-commerce industry generates vast amounts of transaction data daily.
 
 ---
 
-## 🚀 Getting Started
 
-### Prerequisites
-- Python 3.8+
-- pip
+## [Streamlit App](https://shopperspectrum-ntjegxkq4si4vyhjzbueoi.streamlit.app/) Features
 
-### Installation
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Bubai2026/shopper-spectrum.git
-   cd shopper-spectrum
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Download the dataset:**
-   The notebook will automatically download it using `gdown`. Alternatively, download it manually and place `online_retail.csv` in the project folder.
-
-### Running the Jupyter Notebook
-Launch the notebook to see all analysis, visualizations, and model training:
-```bash
-jupyter notebook Shopper_Spectrum.ipynb
-```
-
-### Running the Streamlit App
-```bash
-streamlit run App/app.py
-```
-
-The app will open in your browser.
-
----
-
-## 📊 Streamlit App Features
-
-### 🔍 Product Recommendation
+### Product Recommendation
 - Input a product name (e.g., "WHITE HANGING HEART") or StockCode.
 - Click "Get Recommendations".
 - Displays 5 similar products with their names and codes.
 
-### 👤 Customer Segmentation
+### Customer Segmentation
 - Input:
   - **Recency** (days since last purchase)
   - **Frequency** (number of purchases)
@@ -127,7 +90,7 @@ The app will open in your browser.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 shopper-spectrum/
@@ -149,21 +112,9 @@ shopper-spectrum/
 ├── .gitignore                  # Git ignore rules
 └── README.md                   # Project documentation
 ```
-
 ---
 
-## 🧰 Technical Stack
-
-- **Data Handling:** Pandas, NumPy
-- **Visualization:** Matplotlib, Seaborn
-- **Machine Learning:** Scikit-learn (KMeans, StandardScaler, cosine_similarity)
-- **Statistical Testing:** SciPy
-- **Model Deployment:** Streamlit
-- **Others:** Gdown (data download), Pickle (model serialization)
-
----
-
-## 📈 Key Results
+## Key Results
 
 - **Optimal number of clusters:** 4 (based on Elbow & Silhouette).
 - **Silhouette Score:** ~0.45 (indicating reasonable separation).
@@ -172,48 +123,27 @@ shopper-spectrum/
 
 ---
 
-## 💡 Business Impact
+## Business Impact
 
 - **Targeted Marketing:** High-Value customers can receive premium offers; At-Risk customers can be re-engaged.
 - **Cross-Selling:** Product recommendations increase average order value.
 - **Inventory Management:** Understand demand patterns for popular items.
 - **Customer Retention:** Identify and intervene for At-Risk segments.
-
 ---
 
-## 🧪 Hypothesis Testing
-
-Three statistical tests were conducted:
-1. **High-Value vs Regular Monetary:** Significant difference (p < 0.05).
-2. **UK vs Non-UK Transaction Value:** Significant difference (Welch's t-test, p < 0.05).
-3. **Recency vs Monetary Correlation:** Significant negative correlation (Pearson r = -0.3, p < 0.05).
-
----
-
-## 🛠 Future Improvements
-
-- Implement **customer-specific recommendations** (user-based CF or matrix factorization).
-- Add **hyperparameter tuning** for clustering (e.g., DBSCAN, hierarchical).
-- Incorporate **real-time data streaming** for dynamic segmentation.
-- Enhance the app with **product images** and **purchase history visualization**.
-
----
-
-## 📝 License
+## License
 
 This project is for educational purposes. Feel free to use and modify it.
 
 ---
 
-## 👤 Author
+## Author
 
 **Bubai Sou**  
 [GitHub](https://github.com/Bubai2026)  
 [LinkedIn](https://linkedin.com/in/bubaisou)
 
 ---
-
-## 🙏 Acknowledgements
 
 - UCI Machine Learning Repository for the original dataset.
 - Streamlit for the amazing app framework.
